@@ -1,6 +1,13 @@
+from typing import List, Any
+
 from openpyxl import load_workbook
 from matplotlib import pyplot
 wb = load_workbook('data_analysis_lab.xlsx')
+
+# L = list(wb.worksheets())
+print(wb.worksheets)
+print(wb.sheetnames)
+#print(L[0])
 sheet = wb['Data']
 
 sheet['A'][1:]
