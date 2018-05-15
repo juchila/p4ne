@@ -17,3 +17,5 @@ list_z = list(m3)
 pyplot.plot(list_x, list_y, label="Temp")
 pyplot.plot(list_x, list_z, label="Temp2")
 pyplot.show()
+
+print(sheet['A'][2].value)
