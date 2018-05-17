@@ -1,16 +1,17 @@
-from typing import List, Any
-
 from openpyxl import load_workbook
 from matplotlib import pyplot
+#from openpyxl import *
 wb = load_workbook('data_analysis_lab.xlsx')
 
-# L = list(wb.worksheets())
+
+
 print(wb.worksheets)
 print(wb.sheetnames)
 #print(L[0])
 sheet = wb['Data']
 
 sheet['A'][1:]
+print(sheet['A'][2].value)
 
 def getvalue(x): return x.value
 
@@ -25,4 +26,3 @@ pyplot.plot(list_x, list_y, label="Temp")
 pyplot.plot(list_x, list_z, label="Temp2")
 pyplot.show()
 
-print(sheet['A'][2].value)
