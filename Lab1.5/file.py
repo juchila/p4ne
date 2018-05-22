@@ -1,6 +1,5 @@
 import glob
-import os
-import ipaddress
+# import ipaddress
 import re
 
 
@@ -8,7 +7,7 @@ path = "C://Users//av.legkun//Seafile//p4ne_training//config_files//"
 # L = os.listdir(path)
 L = glob.glob(path+"*.txt")
 print(len(L))
-print(L)
+# print(L)
 i = 0
 ipnl = []
 # ipn = ipaddress.IPv4Interface
