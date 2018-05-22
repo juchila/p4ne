@@ -18,7 +18,7 @@ while i < len(L):
     with open(L[i]) as f:
         print(f)
         for j in f:
-            if re.match("^( )*ip address ([0-9\.])+ ([0-9\.])+$", j):
+            if re.match("^( )*ip address ([0-9\.]+) ([0-9\.]+)$", j):
                 m = re.match("^.*?(([0-9\.]+) ([0-9\.]+))$", j)
                 ipint.append(m.group(2))
         i += 1
