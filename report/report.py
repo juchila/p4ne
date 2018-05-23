@@ -14,7 +14,8 @@ with open(file_src) as f:
         cdr = i.split(",")
         if j == 0:
             j += 1
-            index = [cdr.index("dateTimeOrigination"), cdr.index("callingPartyNumber"), cdr.index("originalCalledPartyNumber"), cdr.index("finalCalledPartyNumber"), cdr.index("duration")]
+            index = [cdr.index("dateTimeOrigination"), cdr.index("callingPartyNumber"),
+                     cdr.index("originalCalledPartyNumber"), cdr.index("finalCalledPartyNumber"), cdr.index("duration")]
             for x in index:
                 ff.write(cdr[x] + " \t")
             ff.write("\n")
