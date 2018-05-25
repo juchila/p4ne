@@ -5,7 +5,7 @@ import flask
 
 # c cisco получаем данные в виде json, print выводит строку, поэтому json.dumps делает строку из json
 # template обрабатывает json, поэтому список данных трансформируем через jsonify в json
-
+#
 app = flask.Flask(__name__)
 
 
